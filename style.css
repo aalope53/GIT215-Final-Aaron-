@@ -1,0 +1,296 @@
+:root {
+        --dk-blue: #123040;
+        --sky-blue: #3599B8;
+        --wht-blue: #DCE8E7;
+        --black: #000000;
+        --navy-blue: #115B8C;
+        --dk-red: #821C19;
+        --lt-red: #D10D0D;
+        --black: #000000;
+
+
+        --heading-fonts: 'Vujahday Script', sans-serif;
+        --body-fonts: 'Gabarito', sans-serif;
+}
+
+
+header, main, footer {
+    padding: 1rem;
+    margin: 0 auto;
+    width: 1440px;
+    background-color: var(--sky-blue);
+}
+
+body {
+    font-family: var(--body-fonts);
+    background: url("https://wallpapercave.com/wp/wp5377238.jpg");
+    background-size: cover;
+}
+
+html, body
+{
+    margin: 0;
+    padding: 0;
+}
+
+
+/*Header*/
+
+   
+header {
+    background-image: url(images/swiss-valley.jpg);
+    text-align: center;
+    height: 350px;
+    background-size: cover;
+
+}
+
+h1 a {
+    text-decoration: none;
+    font-family: var(--heading-fonts);
+    font-size: 70px;
+    color: var(--dk-blue);
+    position: relative;
+    top: 80px;
+}
+
+nav {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 90px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    padding: 0;
+    margin: 1em 0;
+    font-size: 25px;
+
+   
+}
+
+nav a:hover {
+    text-decoration: none;
+	background-color: var(--sky-blue);
+	color: var(--lt-blue);
+    padding: 1rem;
+}
+
+
+
+/* Main */
+
+main {
+   flex: 1;
+   padding-bottom: 100px;
+   padding-top: 80px;
+}
+
+#intro {
+    text-align: center;
+    width: 50%;
+    margin: 0 auto 50px auto;
+    
+}
+
+.content-container {
+  display: flex;
+  width: 85%;
+  margin: 0 auto;
+  
+}
+
+#Content1, #Content2 {
+  
+    display: grid;
+    margin: 0;
+}
+
+#Content1 img {
+    margin: 0 auto;
+}
+
+#Content2 img {
+    margin: 0 auto;
+}
+
+#Content1 {
+  
+  text-align: center;
+  flex: 1;
+  max-width: 50%;
+  margin: .5rem;
+
+}
+
+#Content2 {
+  text-align: center;
+  flex: 1;
+  max-width: 50%;
+  margin: .5rem;
+  
+}
+
+/* Contact */
+
+
+.contact {
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+.required {
+    color: var(--lt-red);
+	font-weight: bold;
+}
+
+.form-wrapper {
+    display: flex;
+    justify-content: center;
+    /*border:solid 1px black;*/
+}
+
+
+.contact-container {
+    display: flex;
+    gap: 2rem; 
+}
+
+.contact-container form {
+    flex: 1;
+    min-width: 300px;
+}
+
+#textimage {
+
+  flex: 1;
+  width: 50%;
+  float:left;
+ 
+  
+}
+
+#textimage img {
+  flex: 1;           
+  object-fit: cover; 
+  width: 100%;
+  height: auto;
+  position: relative;
+  bottom: 10px;
+}
+
+#textimage p {
+    position: relative;
+    bottom: 15px;
+}
+
+
+form {
+	padding: 95px 16px;
+	background-color: var(--dk-blue);
+	color: var(--wht-blue);
+	border-radius: 4px;
+    flex: 1;
+    width: 50%;
+}
+
+input, label, textarea {
+	display: block;
+	width: 95%;
+    margin: 0 auto 16px auto;
+    padding: 2.5px;
+}
+
+input, textarea {
+  margin-bottom: 5px;
+}
+
+label { 
+	margin: 0 auto;
+	font-weight: bold;
+    
+}
+
+fieldset label {
+    position: relative;
+    right: 30px;
+}
+
+fieldset {
+	margin-bottom: 24px;
+	border-radius: 4px;
+	border-color: var(--sky-blue);
+	display: grid;
+	grid-template-columns: 1fr;
+	row-gap: 10px;
+}
+
+fieldset input:focus {
+ outline: none;
+}
+
+legend {
+	font-weight: bold;
+}
+
+.radio-option {
+  display: flex;
+  align-items: center;
+  margin: 2px;
+}
+
+.radio-option label {
+    position: relative;
+    right: 10px;
+}
+
+.radio-option input[type="radio"] {
+  margin: 0;
+}
+
+input:focus, textarea:focus {
+  outline: 2px solid var(--sky-blue);
+  outline-offset: 2px;
+}
+
+
+
+
+
+#my-submit{
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: var(--navy-blue);
+	border: none;
+	color: var(--lt-blue);
+	font-size: 1.1rem;
+	font-weight: bold;
+    margin-top: 25px;
+    box-shadow: -6px 6px 10px var(--black);
+	
+}
+
+#my-submit:hover {
+	box-shadow: -3px 3px 5px var(--black);
+}
+
+
+
+
+
+
+
+footer {
+    padding: 1rem;
+    background-color: var(--navy-blue);
+    color: var(--black);
+    text-align: center;
+    max-width: 1440px;
+    margin: 0 auto;
+    color: var(--wht-blue);   
+} 
